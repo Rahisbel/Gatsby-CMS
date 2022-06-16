@@ -15,5 +15,4 @@ const ContentRenderer = ({content}) => {
         </div>
     )
 }
-
 export default ContentRenderer
