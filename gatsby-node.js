@@ -25,7 +25,9 @@ exports.createPages = async ({ actions, graphql }) => {
     createPage({
       path: `/${page.slug === 'index' ? "" : page.slug}`,
       component: require.resolve("./src/templates/generic-page.js"),
-      context: {},
+      context: {
+        pageIdJim: page.originalId,
+      },
     })
   });
 }
